@@ -6,28 +6,28 @@ function Navbar() {
 
   return (
     <div className="bg-[#404040] px-4 py-8 min-h-[10vh] min-w-full">
-      <div className="flex md:flex-row justify-between items-center">
+      <div className="flex md:flex-row justify-center lg:justify-between items-center">
         <div className="flex flex-col">
           <Link to="/">
             <img
               src="/logo-hayas-blanco.png"
               alt="Logo Colegio Las Hayas"
-              className=" w-full h-12"
+              className="w-80 h-12"
             />
           </Link>
         </div>
 
-        <div className="space-x-8 px-6 hidden md:block  text-white font-semibold">
-          <Link to="/about">
+        <div className="space-x-8 px-6 hidden lg:block  text-white font-semibold">
+          <Link to="/">
             <span
               className={
-                pathname === "/about"
+                pathname === "/"
                   ? ` text-[#A5C6B1]  font-bold`
                   : `lg:hover:text-slate-400`
               }
             >
-              ¿Quienes somos?
-              {pathname === "/about" && (
+              Inicio
+              {pathname === "/" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -99,16 +99,16 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="flex gap-x-4 justify-center md:hidden mt-4 text-white font-semibold">
-        <Link to="/about">
+      <div className="flex gap-x-4 justify-center lg:hidden mt-4 text-white font-semibold">
+        <Link to="/">
           <span
             className={
-              pathname === "/about"
+              pathname === "/"
                 ? ` text-[#A5C6B1]  font-bold`
                 : `lg:hover:text-slate-400`
             }
           >
-            {"¿Quienes somos?"}
+            {"Inicio"}
           </span>
         </Link>
         <Link to="/our-robots">
