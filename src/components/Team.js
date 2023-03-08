@@ -8,51 +8,51 @@ export default function Team() {
       <Navbar />
       <div className="flex flex-row flex-wrap gap-16 items-center justify-center min-h-full py-10">
         <ProfileCard
-          imageSrc="./test-1.jpg"
-          name="Caliche Orozco"
-          position="Desarrollador Web"
+          imageSrc="./JP.jpeg"
+          name="José Pablo"
+          position="Capitan de equipo"
         />
 
         <ProfileCard
-          imageSrc="./test-1.jpg"
-          name="Caliche Orozco"
-          position="Desarrollador Web"
+          imageSrc="./Scarlett.jpeg"
+          name="Scarlett"
+          position="Operadora"
         />
 
         <ProfileCard
-          imageSrc="./test-1.jpg"
-          name="Caliche Orozco"
-          position="Desarrollador Web"
+          imageSrc="./cuauh.jpeg"
+          name="Cuauhtemoc"
+          position="Operador"
         />
 
         <ProfileCard
-          imageSrc="./test-1.jpg"
-          name="Caliche Orozco"
-          position="Desarrollador Web"
+          imageSrc="./camila.jpeg"
+          name="Camila"
+          position="Operadora"
         />
 
         <ProfileCard
-          imageSrc="./test-1.jpg"
-          name="Caliche Orozco"
-          position="Desarrollador Web"
+          imageSrc="./andre.jpeg"
+          name="André"
+          position="Operador"
         />
 
         <ProfileCard
-          imageSrc="./test-1.jpg"
-          name="Caliche Orozco"
-          position="Desarrollador Web"
+          imageSrc="./KAI.jpeg"
+          name="Rodrigo"
+          position="Operador"
         />
 
         <ProfileCard
-          imageSrc="./test-1.jpg"
-          name="Caliche Orozco"
-          position="Desarrollador Web"
+          imageSrc="./jesus-zuñiga.jpeg"
+          name="Jesús Armando"
+          position="Operador"
         />
 
         <ProfileCard
-          imageSrc="./test-1.jpg"
-          name="Caliche Orozco"
-          position="Desarrollador Web"
+          imageSrc="./jesus.jpeg"
+          name="Jesús Ruiz"
+          position="Operador"
         />
       </div>
 
@@ -61,24 +61,6 @@ export default function Team() {
           COACHES Y MENTORES
         </h1>
         <div className="flex flex-row flex-wrap bg-black gap-16 items-center justify-center min-h-full py-10">
-          <ProfileCard
-            imageSrc="./test-1.jpg"
-            name="Caliche Orozco"
-            position="Desarrollador Web"
-          />
-
-          <ProfileCard
-            imageSrc="./test-1.jpg"
-            name="Caliche Orozco"
-            position="Desarrollador Web"
-          />
-
-          <ProfileCard
-            imageSrc="./test-1.jpg"
-            name="Caliche Orozco"
-            position="Desarrollador Web"
-          />
-
           <ProfileCard
             imageSrc="./test-1.jpg"
             name="Caliche Orozco"
