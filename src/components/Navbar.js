@@ -22,7 +22,7 @@ function Navbar() {
             <span
               className={
                 pathname === "/"
-                  ? ` text-[#A5C6B1]  font-bold`
+                  ? ` text-green-600  font-bold`
                   : `lg:hover:text-slate-400`
               }
             >
@@ -48,7 +48,7 @@ function Navbar() {
             <span
               className={
                 pathname === "/team"
-                  ? ` text-[#A5C6B1]  font-bold`
+                  ? ` text-green-600  font-bold`
                   : `lg:hover:text-slate-400`
               }
             >
@@ -75,11 +75,11 @@ function Navbar() {
             <span
               className={
                 pathname === "/robot"
-                  ? ` text-[#A5C6B1]  font-bold`
+                  ? ` text-green-600  font-bold`
                   : `lg:hover:text-slate-400`
               }
             >
-              {"Robot"}
+              {"Fases del robot"}
               {pathname === "/robot" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ function Navbar() {
           <span
             className={
               pathname === "/"
-                ? ` text-[#A5C6B1]  font-bold`
+                ? ` text-green-600  font-bold`
                 : `lg:hover:text-slate-400`
             }
           >
@@ -115,7 +115,7 @@ function Navbar() {
           <span
             className={
               pathname === "/team"
-                ? ` text-[#A5C6B1]  font-bold`
+                ? ` text-green-600  font-bold`
                 : `lg:hover:text-slate-400`
             }
           >
@@ -126,11 +126,11 @@ function Navbar() {
           <span
             className={
               pathname === "/robot"
-                ? ` text-[#A5C6B1]  font-bold`
+                ? ` text-green-600  font-bold`
                 : `lg:hover:text-slate-400`
             }
           >
-            {"Robot"}
+            {"Fases del robot"}
           </span>
         </Link>
       </div>

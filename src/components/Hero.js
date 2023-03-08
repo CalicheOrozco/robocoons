@@ -35,12 +35,12 @@ function Hero() {
 
           <div className=" hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4  pb-20">
             <Link to="/team">
-              <button className="bg-gray-500  hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+              <button className="bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
                 Nuestro Equipo
               </button>
             </Link>
             <Link to="/robot">
-              <button className="bg-gray-500  hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+              <button className="bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
                 Nuestro Robot
               </button>
             </Link>
