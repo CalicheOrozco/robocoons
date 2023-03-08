@@ -12,7 +12,7 @@ function Navbar() {
             <img
               src="/logo-hayas-blanco.png"
               alt="Logo Colegio Las Hayas"
-              className="w-80 h-12"
+              className="w-60 h-12"
             />
           </Link>
         </div>
