@@ -16,43 +16,43 @@ export default function Team() {
         <ProfileCard
           imageSrc="./Scarlett.jpeg"
           name="Scarlett"
-          position="Operadora"
+          position="Operadora / Administradora"
         />
 
         <ProfileCard
           imageSrc="./cuauh.jpeg"
           name="Cuauhtemoc"
-          position="Operador"
+          position="Operador / Diseño - Creativo"
         />
 
         <ProfileCard
           imageSrc="./camila.jpeg"
           name="Camila"
-          position="Operadora"
+          position="Operadora / Programadora"
         />
 
         <ProfileCard
           imageSrc="./andre.jpeg"
           name="André"
-          position="Operador"
+          position="Operador / Programador"
         />
 
         <ProfileCard
           imageSrc="./KAI.jpeg"
           name="Rodrigo"
-          position="Operador"
+          position="Capitán de Proyecto de Innovación / Investigador"
         />
 
         <ProfileCard
           imageSrc="./jesus-zuñiga.jpeg"
           name="Jesús Armando"
-          position="Operador"
+          position="Constructor"
         />
 
         <ProfileCard
           imageSrc="./jesus.jpeg"
           name="Jesús Ruiz"
-          position="Operador"
+          position="Estratega"
         />
       </div>
 
