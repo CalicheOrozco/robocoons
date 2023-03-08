@@ -8,7 +8,7 @@ function Navbar() {
     <div className="bg-[#000] px-4 py-8 min-h-[10vh] min-w-full">
       <div className="flex md:flex-row justify-center lg:justify-between items-center">
         <div className="flex flex-col">
-          <Link to="/">
+          <Link to="http://hayas.edu.mx/">
             <img
               src="/logo-hayas-blanco.png"
               alt="Logo Colegio Las Hayas"
