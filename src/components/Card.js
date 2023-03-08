@@ -1,17 +1,63 @@
-import React from "react";
+import React, { useState } from 'react';
 
-function Card({ imageSrc, title, description, none  }) {
+
+function Card({ imageSrc, title, description, background, none }) {
+  const [isHovering, setIsHovering] = useState(false);
+  
+
+
+
+  let classBackground = "relative rounded-lg shadow-xl h-full overflow-hidden h-80 flex flex-col items-center justify-center"  
+  let classTitle = "text-2xl font-bold text-gray-800"
+  let classDescription = "mt-2 text-gray-600"
+  let classImage = "flex items-center justify-center h-16 w-16 rounded-full mx-auto my-6 "
+
+  const handleMouseEnter = () => {
+    if (background) {
+      setIsHovering(true)
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (background) {
+      setIsHovering(false)
+    }
+  };
+
+
+  if (!background) {
+    classBackground += " bg-white"
+    classImage += "bg-black"
+    
+  } else {
+    classTitle += " text-white"
+    classDescription += " text-white"
+    classImage += "bg-white"
+  }
   return (
-    <div className="bg-white relative rounded-lg shadow-xl h-full overflow-hidden">
-      {
-        none ? null : 
-        <div className={`flex items-center justify-center h-16 w-16 bg-black rounded-full mx-auto mt-6`}>
-        {imageSrc}
-      </div>
-      }
-      <div className="text-center px-6 py-4">
-        <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
-        <p className="mt-2 text-gray-600">{description}</p>
+    <div className={classBackground}>
+      {/* bg-white  */}
+      {background && (
+        <div
+          className="bg-cover bg-center absolute inset-0 z-0"
+          onMouseEnter={handleMouseEnter} 
+          onMouseLeave={ handleMouseLeave}
+          style={{ backgroundImage: `url(${background})` }}
+        >
+          <div className={ isHovering ? "hidden" : "bg-black opacity-70 absolute inset-0"} ></div>
+        </div>
+      )}
+      <div className="text-center px-6 py-4 relative">
+        { none ? null : (
+          <div
+            className={isHovering ? "hidden" : classImage}
+            onMouseEnter={handleMouseEnter}
+          >
+            {imageSrc}
+          </div>
+        )}
+        <h2 className={isHovering ? "hidden" : classTitle } onMouseEnter={handleMouseEnter} >{title}</h2>
+        <p className={isHovering ? "hidden" :classDescription} onMouseEnter={handleMouseEnter} >{description}</p>
       </div>
     </div>
   );
