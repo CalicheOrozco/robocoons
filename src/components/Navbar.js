@@ -5,7 +5,7 @@ function Navbar() {
   const { pathname } = useLocation();
 
   return (
-    <div className="bg-[#404040] px-4 py-8 min-h-[10vh] min-w-full">
+    <div className="bg-[#000] px-4 py-8 min-h-[10vh] min-w-full">
       <div className="flex md:flex-row justify-center lg:justify-between items-center">
         <div className="flex flex-col">
           <Link to="/">
@@ -44,17 +44,17 @@ function Navbar() {
               )}
             </span>
           </Link>
-          <Link to="/our-robots">
+          <Link to="/team">
             <span
               className={
-                pathname === "/our-robots"
+                pathname === "/team"
                   ? ` text-[#A5C6B1]  font-bold`
                   : `lg:hover:text-slate-400`
               }
             >
-              {"Nuestros Robots"}
+              {"Equipo"}
 
-              {pathname === "/our-robots" && (
+              {pathname === "/team" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -71,16 +71,16 @@ function Navbar() {
               )}
             </span>
           </Link>
-          <Link to="/contact">
+          <Link to="/robot">
             <span
               className={
-                pathname === "/contact"
+                pathname === "/robot"
                   ? ` text-[#A5C6B1]  font-bold`
                   : `lg:hover:text-slate-400`
               }
             >
-              {"Contacto"}
-              {pathname === "/contact" && (
+              {"Robot"}
+              {pathname === "/robot" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -111,26 +111,26 @@ function Navbar() {
             {"Inicio"}
           </span>
         </Link>
-        <Link to="/our-robots">
+        <Link to="/team">
           <span
             className={
-              pathname === "/our-robots"
+              pathname === "/team"
                 ? ` text-[#A5C6B1]  font-bold`
                 : `lg:hover:text-slate-400`
             }
           >
-            {"Nuestros Robots"}
+            {"Equipo"}
           </span>
         </Link>
-        <Link to="/contact">
+        <Link to="/robot">
           <span
             className={
-              pathname === "/contact"
+              pathname === "/robot"
                 ? ` text-[#A5C6B1]  font-bold`
                 : `lg:hover:text-slate-400`
             }
           >
-            {"Contacto"}
+            {"Robot"}
           </span>
         </Link>
       </div>

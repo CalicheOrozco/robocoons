@@ -1,6 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Card from "./Card";
+import { Link } from "react-router-dom";
+import { BiRocket } from "react-icons/bi";
+import { MdVisibility } from "react-icons/md";
+import { IoEarth } from "react-icons/io5";
+import { RiNumber1, RiNumber2, RiNumber3, RiNumber4 } from "react-icons/ri";
 
 function Hero() {
   return (
@@ -29,12 +34,16 @@ function Hero() {
           </p>
 
           <div className=" hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4  pb-20">
-            <button className="bg-[#A5C6B1]  hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
-              Contactanos
+            <Link to="/team">
+            <button className="bg-gray-500  hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+              Nuestro Equipo
             </button>
-            <button className="bg-[#A5C6B1]  hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
-              Conoce más
+            </Link>
+            <Link to="/robot">
+            <button className="bg-gray-500  hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+            Nuestro Robot
             </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -42,24 +51,21 @@ function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-20">
           <div className="col-span-1">
             <Card
-              color={"#A5C6B1"}
-              imageSrc="./objetivo.png"
+              imageSrc={<BiRocket className="h-10 w-10 text-white" />}
               title="Objetivo"
               description="Ser un equipo de alto rendimiento dedicado al diseño de proyectos tecnológicos con la meta de generar un impacto positivo en la comunidad a través del uso de aplicaciones STEM."
             />
           </div>
           <div className="col-span-1">
             <Card
-              color={"#A5C6B1"}
-              imageSrc="./vision.png"
+              imageSrc={<MdVisibility className="h-10 w-10 text-white" />}
               title="Vision"
               description="Ser un equipo relevante y expandir el área de alcance de nuestros proyectos a un ámbito internacional para el 2024."
             />
           </div>
           <div className="col-span-1">
             <Card
-              color={"#A5C6B1"}
-              imageSrc="./alcance.png"
+              imageSrc={<IoEarth className="h-10 w-10 text-white" />}
               title="Alcance"
               description="Desde febrero de 2001 iniciamos espacios donde no sólo los niños, sino también los jóvenes y adultos pueden trabajar desarrollando ideas poderosas aprendiendo con principios aplicados tanto a la ciencia e ingeniería, como física y matemáticas."
             />
@@ -72,28 +78,30 @@ function Hero() {
 
 
       <div className="flex flex-col items-center justify-center mb-8">
-      <h1 className="text-4xl md:text-6xl text-black font-bold leading-tight mb-4"> Historia </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-20">
+      <h1 className="text-4xl md:text-6xl text-black font-bold leading-tight mb-4"> HISTORIA </h1>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-20">
           <div className="col-span-1">
             <Card
-            
-              color={"#FFD524"}
-              imageSrc="./history-1.png"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate nulla at ante rhoncus, vel efficitur felis condimentum. Proin odio odio."
+              imageSrc={<RiNumber1 className="h-10 w-10 text-white" />}
+              description="Se inició a estudiar la plataforma en Septiembre del 2001. En Febrero del 2002, el taller de Robótica empezó como el primer taller vespertino impartido por Profesores en el Colegio Las Hayas."
             />
           </div>
           <div className="col-span-1">
             <Card
-              color={"#FFD524"}
-              imageSrc="./history-2.png"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate nulla at ante rhoncus, vel efficitur felis condimentum. Proin odio odio."
+              imageSrc={<RiNumber2 className="h-10 w-10 text-white" />}
+              description="En el 2004 llega la primera competencia de FLL a México gracias a Bárbara Gómez de Navarro, lo que nos permitió participar. "
             />
           </div>
           <div className="col-span-1">
             <Card
-              color={"#FFD524"}
-              imageSrc="./history-3.png"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate nulla at ante rhoncus, vel efficitur felis condimentum. Proin odio odio."
+              imageSrc={<RiNumber3 className="h-10 w-10 text-white" />}
+              description='Con ayuda de la Maestra Lula y el Maestro Carlos, el equipo de "Robocoons" comenzó a participar en distintas competencias de robótica, como "NanoQuest", "No Limits" y "Ocean Odyssey". '
+            />
+          </div>
+          <div className="col-span-1">
+            <Card
+              imageSrc={<RiNumber4 className="h-10 w-10 text-white" />}
+              description='A través de los años, distintos estudiantes y profesores se han posicionado en podios Regionales, Naciones e Internacionales, formando así distintos equipos.'
             />
           </div>
         </div>
