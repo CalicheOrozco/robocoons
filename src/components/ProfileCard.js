@@ -5,7 +5,7 @@ function ProfileCard({ imageSrc, name, position }) {
   return (
     <div className="bg-white max-w-sm overflow-hidden shadow-xl text-center rounded-3xl">
       <img
-        className="mx-auto"
+        className="mx-auto h-96 w-80"
         src={imageSrc}
         alt={`Profile of ${name}`}
       />
