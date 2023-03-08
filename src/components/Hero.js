@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { BiRocket } from "react-icons/bi";
 import { MdVisibility } from "react-icons/md";
 import { IoEarth } from "react-icons/io5";
-import { RiNumber1, RiNumber2, RiNumber3, RiNumber4 } from "react-icons/ri";
 import TimeLine from "./TimeLine";
 
 function Hero() {
@@ -48,7 +47,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center md:-mt-32 pb-10">
+      <div className="flex flex-col items-center justify-center md:-mt-32 pt-10 pb-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-20">
           <div className="col-span-1">
             <Card
@@ -83,28 +82,28 @@ function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-4 px-20 md:px-40 lg:px-96 ">
           <div className="col-span-1">
             <Card
-              imageSrc={<RiNumber1 className="h-10 w-10 text-white" />}
+              none={true}
               description="Se inició a estudiar la plataforma en Septiembre del 2001. En Febrero del 2002, el taller de Robótica empezó como el primer taller vespertino impartido por Profesores en el Colegio Las Hayas."
             />
           </div>
           <TimeLine />
           <div className="col-span-1">
             <Card
-              imageSrc={<RiNumber2 className="h-10 w-10 text-white" />}
+              none={true}
               description="En el 2004 llega la primera competencia de FLL a México gracias a Bárbara Gómez de Navarro, lo que nos permitió participar. "
             />
           </div>
           <TimeLine />
           <div className="col-span-1">
             <Card
-              imageSrc={<RiNumber3 className="h-10 w-10 text-white" />}
+              none={true}
               description='Con ayuda de la Maestra Lula y el Maestro Carlos, el equipo de "Robocoons" comenzó a participar en distintas competencias de robótica, como "NanoQuest", "No Limits" y "Ocean Odyssey". '
             />
           </div>
           <TimeLine />
           <div className="col-span-1">
             <Card
-              imageSrc={<RiNumber4 className="h-10 w-10 text-white" />}
+              none={true}
               description='A través de los años, distintos estudiantes y profesores se han posicionado en podios Regionales, Naciones e Internacionales, formando así distintos equipos.'
             />
           </div>
