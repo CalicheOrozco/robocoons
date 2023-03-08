@@ -18,7 +18,7 @@ function Hero() {
           className="w-full h-full absolute inset-0 z-0 object-cover"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="z-10 text-white text-center flex flex-col items-center justify-center">
+        <div className="z-10 text-white text-center flex flex-col items-center justify-center px-10">
           <img
             src="./robocoons-logo2.png"
             alt="Logo Robocoons"
