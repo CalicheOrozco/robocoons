@@ -6,6 +6,7 @@ import { BiRocket } from "react-icons/bi";
 import { MdVisibility } from "react-icons/md";
 import { IoEarth } from "react-icons/io5";
 import TimeLine from "./TimeLine";
+import Footer from "./Footer";
 
 function Hero() {
   return (
@@ -108,6 +109,7 @@ function Hero() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

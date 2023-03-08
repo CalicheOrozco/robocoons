@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 import Navbar from "./Navbar";
 import { RiNumber1, RiNumber2, RiNumber3, RiNumber4 } from "react-icons/ri";
+import Footer from "./Footer";
 
 export default function Robot() {
   return (
@@ -51,6 +52,7 @@ export default function Robot() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

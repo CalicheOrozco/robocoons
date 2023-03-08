@@ -1,10 +1,11 @@
 import React from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function ProfileCard({ imageSrc, name, position }) {
       
   return (
     <div className="bg-white max-w-sm overflow-hidden shadow-xl text-center rounded-3xl">
-      <img
+      <LazyLoadImage
         className="mx-auto h-96 w-80"
         src={imageSrc}
         alt={`Profile of ${name}`}

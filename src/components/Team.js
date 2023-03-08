@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ProfileCard from "./ProfileCard";
 
@@ -91,6 +92,8 @@ export default function Team() {
             position="Desarrollador Web"
           />
         </div>
+        <Footer />
+        
       </div>
     </>
   );
