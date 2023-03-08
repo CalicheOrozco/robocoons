@@ -29,20 +29,20 @@ function Hero() {
             Bienvenido a nuestro sitio web
           </h1>
           <p className="text-lg md:text-xl mb-8">
-            Somos una empresa especializada en servicio de robótica y
-            automatización
+            Somos un equipo de estudiantes apasionados por la robótica y la
+            tecnología, y queremos compartir nuestra experiencia contigo.
           </p>
 
           <div className=" hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4  pb-20">
             <Link to="/team">
-            <button className="bg-gray-500  hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
-              Nuestro Equipo
-            </button>
+              <button className="bg-gray-500  hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+                Nuestro Equipo
+              </button>
             </Link>
             <Link to="/robot">
-            <button className="bg-gray-500  hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
-            Nuestro Robot
-            </button>
+              <button className="bg-gray-500  hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+                Nuestro Robot
+              </button>
             </Link>
           </div>
         </div>
@@ -73,12 +73,11 @@ function Hero() {
         </div>
       </div>
 
-      
-      
-
-
       <div className="flex flex-col items-center justify-center mb-8">
-      <h1 className="text-4xl md:text-6xl text-black font-bold leading-tight mb-4"> HISTORIA </h1>
+        <h1 className="text-4xl md:text-6xl text-black font-bold leading-tight mb-4">
+          {" "}
+          HISTORIA{" "}
+        </h1>
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-4 px-20 md:px-40 lg:px-96 ">
           <div className="col-span-1">
             <Card
@@ -104,7 +103,7 @@ function Hero() {
           <div className="col-span-1">
             <Card
               none={true}
-              description='A través de los años, distintos estudiantes y profesores se han posicionado en podios Regionales, Naciones e Internacionales, formando así distintos equipos.'
+              description="A través de los años, distintos estudiantes y profesores se han posicionado en podios Regionales, Naciones e Internacionales, formando así distintos equipos."
             />
           </div>
         </div>
