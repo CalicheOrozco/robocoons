@@ -69,28 +69,26 @@ export default function Team() {
           />
 
           <ProfileCard
-            imageSrc="./test-1.jpg"
-            name="Caliche Orozco"
-            position="Desarrollador Web"
+            imageSrc="./mentor-2.jpeg"
+            name="Ivanka"
+            position="Coach"
           />
 
           <ProfileCard
-            imageSrc="./test-1.jpg"
-            name="Caliche Orozco"
-            position="Desarrollador Web"
+            imageSrc="./mentor-3.jpeg"
+            name="Pamela"
+            position="Mentora"
           />
 
           <ProfileCard
-            imageSrc="./test-1.jpg"
-            name="Caliche Orozco"
-            position="Desarrollador Web"
+            imageSrc="./mentor-4.jpeg"
+            name="Karem"
+            position="Mentora"
           />
 
-          <ProfileCard
-            imageSrc="./test-1.jpg"
-            name="Caliche Orozco"
-            position="Desarrollador Web"
-          />
+          
+
+          
         </div>
         <Footer />
         
