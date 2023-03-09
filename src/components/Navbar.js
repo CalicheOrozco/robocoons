@@ -1,13 +1,26 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 
 function Navbar() {
   const { pathname } = useLocation();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+
+    handleResize(); // para actualizar el estado cuando se carga la página
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="bg-[#000] px-4 py-8 min-h-[10vh] min-w-full">
-      <div className="flex md:flex-row justify-center justify-between items-center">
+      <div className="flex md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link to="http://hayas.edu.mx/">
             <img
@@ -129,13 +142,13 @@ function Navbar() {
         <div className="flex gap-4">
         <Link
             to="https://github.com/NeftaliVenancio/Robocoons-FLL-Challenge-2023.git"
-            className="hidden md:block text-base font-bold text-white"
+            className="hidden sm:block text-base font-bold text-white"
           >
             <FaGithub className="text-2xl" />
           </Link>
 
           <Link
-            to="https://drive.google.com/file/d/1zHs7kh_D_7befzZAVY0BcfwB2R5L8w4C/view"
+            to={isMobile ? "https://drive.google.com/file/d/1zHs7kh_D_7befzZAVY0BcfwB2R5L8w4C/view" : "/documentation"}
             className="text-base font-bold text-white"
           >
             <span className=" p-3 bg-green-500 rounded-xl hover:bg-green-900">{"Documentación "}</span>
