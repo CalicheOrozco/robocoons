@@ -55,6 +55,18 @@ export default function Team() {
           name="Jesús Ruiz"
           position="Estratega"
         />
+
+        <ProfileCard
+          imageSrc="./alejandro.jpg"
+          name="Alejandro"
+          position="Programador"
+        />
+
+        <ProfileCard
+          imageSrc="./Mauricio.jpg"
+          name="Mauricio"
+          position="Constructor"
+        />
       </div>
 
       <div className=" bg-black text-center rounded-t-3xl">
@@ -86,8 +98,11 @@ export default function Team() {
             position="Mentora"
           />
 
-          
-
+          <ProfileCard
+            imageSrc="./mentor-5.jpeg"
+            name="Alejandra"
+            position="Mentora"
+          />
           
         </div>
         <Footer />
