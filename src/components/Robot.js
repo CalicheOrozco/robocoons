@@ -10,10 +10,6 @@ export default function Robot() {
       <Navbar />
 
       <div className="relative flex flex-col items-center flex-grow  justify-center bg-black py-10">
-        <h1 className="text-4xl md:text-6xl text-black font-bold leading-tight mb-4">
-          {" "}
-          HISTORIA{" "}
-        </h1>
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 px-20 md:px-40 lg:px-96 ">
           <div className="col-span-1">
             <Card
