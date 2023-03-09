@@ -63,9 +63,9 @@ export default function Team() {
         </h1>
         <div className="flex flex-row flex-wrap bg-black gap-16 items-center justify-center min-h-full py-10">
           <ProfileCard
-            imageSrc="./test-1.jpg"
-            name="Caliche Orozco"
-            position="Desarrollador Web"
+            imageSrc="./mentor-1.jpeg"
+            name="Neftalí"
+            position="Head Coach"
           />
 
           <ProfileCard
