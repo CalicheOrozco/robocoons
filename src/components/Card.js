@@ -49,7 +49,7 @@ function Card({ imageSrc, title, description, background, none }) {
       {/* bg-white  */}
       {background && (
         <div
-          className="bg-cover bg-center absolute inset-0 z-0"
+          className="bg-cover transform hover:scale-125 transition duration-3000 ease-out object-cover bg-center absolute inset-0 z-0"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           style={{ backgroundImage: `url(${background})` }}
@@ -58,6 +58,7 @@ function Card({ imageSrc, title, description, background, none }) {
             className={
               isHovering ? "hidden" : "bg-black opacity-70 absolute inset-0"
             }
+            onMouseEnter={handleMouseEnter}
           ></div>
         </div>
       )}
