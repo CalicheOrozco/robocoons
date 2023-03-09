@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <div className="bg-[#000] px-4 py-8 min-h-[10vh] min-w-full">
-      <div className="flex md:flex-row justify-center lg:justify-between items-center">
+      <div className="flex md:flex-row justify-center justify-between items-center">
         <div className="flex flex-col">
           <Link to="http://hayas.edu.mx/">
             <img
@@ -124,13 +124,25 @@ function Navbar() {
               )}
             </span>
           </Link>
-          <Link
-            to="https://github.com/NeftaliVenancio/Robocoons-FLL-Challenge-2023.git"
-            className="text-base font-bold text-green-500"
-          >
-            <span className="lg:hover:text-slate-400">{"Github"}</span>
-          </Link>
         </div>
+
+        <div className="flex gap-4">
+        <Link
+            to="https://github.com/NeftaliVenancio/Robocoons-FLL-Challenge-2023.git"
+            className="hidden md:block text-base font-bold text-white"
+          >
+            <FaGithub className="text-2xl" />
+          </Link>
+
+          <Link
+            to="https://drive.google.com/file/d/1zHs7kh_D_7befzZAVY0BcfwB2R5L8w4C/view"
+            className="text-base font-bold text-white"
+          >
+            <span className=" p-3 bg-green-500 rounded-xl hover:bg-green-900">{"Documentación "}</span>
+          </Link>
+
+          </div>
+
       </div>
       <div className="flex gap-x-4 justify-center lg:hidden mt-4 text-white font-semibold">
         <Link to="/">
@@ -177,13 +189,9 @@ function Navbar() {
             {"Investigación"}
           </span>
         </Link>
-        <Link
-            to="https://github.com/NeftaliVenancio/Robocoons-FLL-Challenge-2023.git"
-            className="text-base font-bold text-green-500"
-          >
-            <span className="lg:hover:text-slate-400">{"Github"}</span>
-          </Link>
+          
       </div>
+      
     </div>
   );
 }
