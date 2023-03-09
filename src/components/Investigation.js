@@ -14,7 +14,8 @@ export default function Investigation() {
           <div className="col-span-1">
             <Card
               imageSrc={<RiNumber1 className="h-10 w-10 text-black" />}
-              background="./robot-1.jpeg"
+              noHover={true}
+              background="./investigation-1.jpg"
               title="Problemática"
               description="Las PTAR consumen mucha energía eléctrica externa de fuentes no renovables y contaminantes, lo que representa una carga económica significativa."
             />
@@ -23,7 +24,8 @@ export default function Investigation() {
           <div className="col-span-1">
             <Card
               imageSrc={<RiNumber2 className="h-10 w-10 text-black" />}
-              background="./robot-2.jpeg"
+              noHover={true}
+              background="./investigation-2.jpg"
               title="Investigación"
               description="Se investigaron sitios y expertos en ecología, energía, desarrollo ambiental, investigación e innovación."
             />
@@ -32,18 +34,10 @@ export default function Investigation() {
           <div className="col-span-1">
             <Card
               imageSrc={<RiNumber3 className="h-10 w-10 text-black" />}
-              background="./robot-3.jpg"
+              noHover={true}
+              background="./investigation-3.jpg"
               title="Solución"
               description="Crear una minicentral hidroeléctrica de tipo agua fluyente que reduzca los costos por consumo de electricidad y promueva una estrategia sustentable para la PTAR y la comunidad."
-            />
-          </div>
-
-          <div className="col-span-1">
-            <Card
-              imageSrc={<RiNumber4 className="h-10 w-10 text-black" />}
-              background="./robot-4.jpg"
-              title="Chilangote 2.0"
-              description="Construido para la fase Nacional. Versión compacta del CHILANGOTE que permite mayor rango de movilidad y versatilidad (2 modelos construidos)."
             />
           </div>
         </div>
