@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function Card({ imageSrc, title, description, background, none }) {
+function Card({ imageSrc, title, description, background, none, noHover }) {
   const [isHovering, setIsHovering] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -12,13 +12,13 @@ function Card({ imageSrc, title, description, background, none }) {
     "flex items-center justify-center h-16 w-16 rounded-full mx-auto my-6 ";
 
   const handleMouseEnter = () => {
-    if (background && !isMobile) {
+    if (background && !isMobile && !noHover) {
       setIsHovering(true);
     }
   };
 
   const handleMouseLeave = () => {
-    if (background && !isMobile) {
+    if (background && !isMobile && !noHover) {
       setIsHovering(false);
     }
   };
