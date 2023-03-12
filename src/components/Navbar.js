@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <div className="bg-[#000] px-4 py-8 min-h-[10vh] min-w-full">
-      <div className="flex md:flex-row justify-between items-center">
+      <div className="flex md:flex-row justify-around items-center">
         <div className="flex flex-col">
           <Link to="http://hayas.edu.mx/">
             <img
