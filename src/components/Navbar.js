@@ -149,9 +149,8 @@ function Navbar() {
 
           <Link
             to={isMobile ? "https://drive.google.com/file/d/1zHs7kh_D_7befzZAVY0BcfwB2R5L8w4C/view" : "/documentation"}
-            className="text-base font-bold text-white"
           >
-            <span className=" p-3 bg-green-500 rounded-xl hover:bg-green-900">{"Documentación "}</span>
+            <span className="text-base font-bold text-white p-1.5 md:p-3 bg-green-500 rounded-xl hover:bg-green-900 ">{"Documentación "}</span>
           </Link>
 
           </div>
