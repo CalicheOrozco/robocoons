@@ -157,7 +157,7 @@ function Navbar() {
           </div>
 
       </div>
-      <div className="flex gap-x-4 justify-center lg:hidden mt-4 text-white font-semibold">
+      <div className="flex gap-x-4 justify-around items-center text-center lg:hidden mt-4 text-white font-semibold">
         <Link to="/">
           <span
             className={
