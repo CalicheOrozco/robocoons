@@ -139,21 +139,19 @@ function Navbar() {
           </Link>
         </div>
 
-        <div className="flex gap-4">
+        <div className="hidden md:flex gap-4 ">
         <Link
             to="https://github.com/NeftaliVenancio/Robocoons-FLL-Challenge-2023.git"
-            className="hidden sm:block text-base font-bold text-white"
+            className="text-base font-bold text-white"
           >
             <FaGithub className="text-2xl" />
           </Link>
-
           <Link
             to={isMobile ? "https://drive.google.com/file/d/1zHs7kh_D_7befzZAVY0BcfwB2R5L8w4C/view" : "/documentation"}
           >
             <span className="text-base font-bold text-white p-1.5 md:p-3 bg-green-500 rounded-xl hover:bg-green-900 ">{"Documentación "}</span>
           </Link>
-
-          </div>
+        </div>
 
       </div>
       <div className="flex gap-x-4 justify-around items-center text-center lg:hidden mt-4 text-white font-semibold">
@@ -200,9 +198,22 @@ function Navbar() {
           >
             {"Investigación"}
           </span>
-        </Link>
-          
+        </Link> 
       </div>
+      
+      <div className="flex md:hidden w-full gap-4 justify-center py-5">
+        <Link
+            to="https://github.com/NeftaliVenancio/Robocoons-FLL-Challenge-2023.git"
+            className="block text-base font-bold text-white"
+          >
+            <FaGithub className="text-2xl" />
+          </Link>
+          <Link
+            to={isMobile ? "https://drive.google.com/file/d/1zHs7kh_D_7befzZAVY0BcfwB2R5L8w4C/view" : "/documentation"}
+          >
+            <span className="text-base font-bold text-white p-3 md:p-3 bg-green-500 rounded-xl hover:bg-green-900 ">{"Documentación "}</span>
+          </Link>
+        </div>
       
     </div>
   );
