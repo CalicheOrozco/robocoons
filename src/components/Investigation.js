@@ -4,12 +4,12 @@ import Navbar from "./Navbar";
 import { RiNumber1, RiNumber2, RiNumber3, RiNumber4 } from "react-icons/ri";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 
 export default function Investigation() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-
       <div className="relative flex flex-col items-center flex-grow  justify-center bg-white py-10">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 px-20 md:px-40 lg:px-96 ">
           <div className="col-span-1">
@@ -54,6 +54,7 @@ export default function Investigation() {
           </div>
         </div>
       </div>
+      <ScrollToTop />
       <Footer />
     </div>
   )

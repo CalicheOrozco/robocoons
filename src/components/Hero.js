@@ -7,6 +7,7 @@ import { MdVisibility } from "react-icons/md";
 import { IoEarth } from "react-icons/io5";
 import TimeLine from "./TimeLine";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 function Hero() {
   return (
@@ -109,6 +110,7 @@ function Hero() {
           </div>
         </div>
       </div>
+      <ScrollToTop />
       <Footer />
     </div>
   );

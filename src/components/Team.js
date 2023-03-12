@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ProfileCard from "./ProfileCard";
+import ScrollToTop from "./ScrollToTop";
 
 export default function Team() {
   return (
@@ -108,6 +109,7 @@ export default function Team() {
         <Footer />
         
       </div>
+      <ScrollToTop />
     </>
   );
 }
